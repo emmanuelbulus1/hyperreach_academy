@@ -3,200 +3,351 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Join HYPERREACH Academy to learn AI, build bots, and make money. Also, discover how to earn with Syllaby affiliate marketing." />
-  <title>HYPERREACH Academy & Syllaby Affiliate</title>
-  <!-- Consider adding a favicon.ico here -->
-  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta name="description" content="Join HYPERREACH Academy to unlock AI, creative, and digital income skills with exclusive surprises and premium opportunities." />
+  <title>HYPERREACH Academy • Unlock Your Digital Superpowers</title>
+  <link rel="icon" href="images/hyperreach-logo.png" type="image/png">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Added fallback fonts */
-      background: #0f0f0f; /* Slightly lighter dark for less harshness */
-      color: #e0e0e0; /* Slightly softer white for text */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0e1120;
+      color: #e0e6f6;
       padding: 20px;
-      line-height: 1.6; /* Improved readability */
+      line-height: 1.6;
+      position: relative;
+      min-height: 100vh;
+      overflow-x: hidden;
     }
-
-    .container { /* Added a container for better centering and max-width */
-      max-width: 800px;
+    .container {
+      max-width: 840px;
       margin: 0 auto;
     }
-
+    /* Sparkle animation keyframes */
+    @keyframes sparkle {
+      0%, 100% { opacity: 0.7; filter: blur(0.5px); }
+      40% { opacity: 1; filter: blur(0); }
+      60% { opacity: 0.2; filter: blur(2px);}
+    }
+    /* Magic glowing text */
+    .glow {
+      color: #06e0ff;
+      text-shadow: 0 0 16px #37fff8, 0 0 32px #46cfff;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      position: relative;
+      z-index: 2;
+    }
+    .sparkle {
+      position: absolute;
+      pointer-events: none;
+      width: 34px;
+      height: 34px;
+      background: radial-gradient(circle at 60% 40%, #fff 65%, #06e0ff22 100%);
+      border-radius: 50%;
+      opacity: 0.7;
+      animation: sparkle 2.6s infinite;
+      z-index: 2;
+    }
+    /* Header with logo and sparkle */
     header {
       text-align: center;
-      padding: 50px 20px; /* Increased padding */
-      background: linear-gradient(135deg, #00ffcc, #007bff); /* Adjusted gradient angle */
-      border-radius: 16px; /* Slightly larger radius */
-      margin-bottom: 40px; /* Space below header */
-      box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); /* Subtle shadow */
-    }
-
-    header h1 {
-      font-size: 2.8em; /* Increased size */
-      color: #0a0a0a; /* Kept dark for contrast on gradient */
-      margin-bottom: 10px;
-    }
-
-    header p.subtitle { /* Class for subtitle for specific styling */
-      color: #1a1a1a;
-      font-weight: 500; /* Slightly less bold for balance */
-      font-size: 1.1em;
-    }
-
-    section {
-      margin-top: 30px; /* Consistent margin */
-      background: #1e1e1e; /* Slightly lighter section background */
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3); /* Subtle shadow for depth */
-    }
-
-    h2 {
-      color: #00ffcc;
-      font-size: 1.8em; /* Slightly larger h2 */
-      border-bottom: 2px solid #007bff; /* Accent border */
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-
-    ul {
-      list-style-type: none; /* Remove default bullets */
-      padding-left: 0;
-    }
-
-    ul li {
-      padding: 8px 0 8px 25px; /* Space for custom bullet */
+      padding: 48px 20px 30px 20px;
+      background: linear-gradient(135deg, #00fff0 0%, #0a2fff 100%);
+      border-radius: 18px;
+      margin-bottom: 28px;
+      box-shadow: 0 6px 28px #00eaff44;
       position: relative;
-      font-size: 1.05em;
+      overflow: visible;
     }
-
-    ul li::before { /* Custom bullet point */
-      content: '✓'; /* Checkmark or other symbol */
-      color: #00ffcc;
-      font-weight: bold;
+    .logo-header {
+      width: 110px;
+      height: auto;
+      margin-bottom: 18px;
+      filter: drop-shadow(0 6px 18px #4bb0ff66);
+      animation: pulseLogo 2.2s infinite alternate;
+      background: transparent;
+    }
+    @keyframes pulseLogo {
+      0% { transform: scale(1) rotate(-2deg);}
+      60% { transform: scale(1.05) rotate(1deg);}
+      100% { transform: scale(1) rotate(-2deg);}
+    }
+    header h1 {
+      font-size: 2.5em;
+      color: #0a1a40;
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+      font-weight: 800;
+      position: relative;
+      display: inline-block;
+      z-index: 2;
+    }
+    .subtitle {
+      color: #1a1a1a;
+      font-weight: 500;
+      font-size: 1.13em;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 2;
+    }
+    /* Welcome/animated section */
+    .welcome-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 170px;
+      background: linear-gradient(90deg, #e3efff22 0%, #c3e0ff22 100%);
+      margin-bottom: 36px;
+      border-radius: 13px;
+      box-shadow: 0 2px 18px #00eaff26;
+      position: relative;
+      overflow: visible;
+      z-index: 1;
+    }
+    .welcome-logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .logo-animated {
+      width: 165px;
+      margin-bottom: 1rem;
+      filter: drop-shadow(0 6px 22px #73d4ff88);
+      animation: pulseLogo 2.8s infinite alternate;
+      background: transparent;
+      position: relative;
+      z-index: 2;
+    }
+    .welcome-text {
+      font-size: 1.35rem;
+      color: #09cfff;
+      font-weight: 700;
+      text-shadow: 0 1px 6px #fff, 0 2px 18px #b0d4ff77;
+      letter-spacing: 0.04em;
+    }
+    /* What You'll Learn */
+    #academy-info {
+      background: #161a33;
+      padding: 28px 22px 22px 22px;
+      border-radius: 13px;
+      box-shadow: 0 2px 18px #00fff522;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    #academy-info h2 {
+      color: #22ffe3;
+      font-size: 2em;
+      border-bottom: 2px solid #0099ee;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 1px 8px #0cf5ff44;
+      display: inline-block;
+    }
+    .features-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .features-list li {
+      padding: 11px 0 11px 34px;
+      position: relative;
+      font-size: 1.10em;
+      margin-bottom: 1px;
+      color: #fff;
+      font-weight: 500;
+      text-shadow: 0 0px 1px #22aaff33;
+    }
+    .features-list li::before {
+      content: '✨';
       position: absolute;
       left: 0;
-      top: 8px; /* Adjust vertical alignment */
+      top: 8px;
+      font-size: 1.2em;
+      color: #06e0ff;
+      animation: sparkle 2.6s infinite;
+      opacity: 0.88;
     }
-
-    p {
-      margin-bottom: 15px; /* Consistent paragraph spacing */
-    }
-
-    strong { /* Style strong tags for emphasis */
-      color: #00ffcc;
-    }
-
-    a {
-      color: #00ddbb; /* Slightly adjusted link color for cohesion */
-      font-weight: bold;
-      text-decoration: none;
-      transition: color 0.3s ease; /* Smooth hover effect */
-    }
-
-    a:hover, a:focus {
-      color: #00ffcc;
-      text-decoration: underline;
-    }
-
-    .cta-button { /* Class for Call-to-Action buttons */
-      display: inline-block;
-      background-color: #00ffcc;
-      color: #0a0a0a;
-      padding: 12px 25px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 15px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-
-    .cta-button:hover, .cta-button:focus {
-      background-color: #00ddbb;
-      color: #000; /* Ensure contrast on hover */
-      text-decoration: none;
-      transform: translateY(-2px); /* Slight lift on hover */
-    }
-
-    .payment-info {
-        background-color: #2a2a2a;
-        padding: 15px;
-        border-radius: 8px;
-        margin-top: 10px;
-        border-left: 4px solid #007bff;
-    }
-    .payment-info strong {
-        color: #fff; /* Make bank details stand out more on this background */
-    }
-
-
-    /* Syllaby section was a div, changed to section for semantics */
-    .syllaby-section {
-      margin-top: 50px; /* Increased top margin */
-      background: #1a1a1a; /* Slightly different bg for distinction */
-      padding: 30px;
-      border-left: 5px solid #007bff; /* Using the other accent color */
+    /* WhatsApp CTA */
+    #how-to-join {
+      margin-top: 27px;
+      background: #1e2236;
+      padding: 25px 22px;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px #00eaff22;
+      margin-bottom: 18px;
+      position: relative;
+    }
+    #how-to-join h2 {
+      color: #00ffcc;
+      font-size: 1.45em;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 7px;
+      margin-bottom: 11px;
+      font-weight: 700;
+      display: inline-block;
+      letter-spacing: 0.03em;
+    }
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(90deg, #00ffcc, #0099ff 90%);
+      color: #091c29;
+      padding: 13px 28px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.05em;
+      text-align: center;
+      margin-top: 14px;
+      margin-bottom: 2px;
+      box-shadow: 0 2px 12px #0cf5ff33;
+      transition: background 0.3s, color 0.3s, transform 0.2s;
+      letter-spacing: 0.02em;
+      border: none;
+    }
+    .cta-button:hover, .cta-button:focus {
+      background: linear-gradient(90deg, #00c3a5 10%, #0069b3 100%);
+      color: #fff;
+      text-decoration: none;
+      transform: translateY(-2px) scale(1.04);
+    }
+    /* Affiliate/Teaser Section */
+    .syllaby-section {
+      margin-top: 32px;
+      background: linear-gradient(120deg, #1a1930 60%, #232a53 100%);
+      padding: 32px 22px 22px 22px;
+      border-left: 5px solid #00c3ff;
+      border-radius: 13px;
+      box-shadow: 0 2px 18px #00fff520;
+      margin-bottom: 18px;
+      position: relative;
+      overflow: visible;
     }
     .syllaby-section h2 {
-        border-bottom-color: #00ffcc; /* Match the other accent */
+      color: #00ffcc;
+      font-size: 1.35em;
+      border-bottom: 2px solid #00ffcc;
+      padding-bottom: 7px;
+      margin-bottom: 14px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      display: inline-block;
+      text-shadow: 0 1px 6px #0cf5ff44;
     }
     .syllaby-section p {
-      font-size: 1.1em;
+      font-size: 1.12em;
+      color: #f1f7ff;
+      margin-bottom: 7px;
+      text-shadow: 0 1px 4px #00bfae22;
     }
-
-    footer { /* Changed div.footer to footer for semantics */
-      margin-top: 60px;
-      padding-top: 20px;
+    /* Footer */
+    footer {
+      margin-top: 50px;
+      padding-top: 18px;
       text-align: center;
-      font-size: 0.9em;
-      color: #888; /* Slightly lighter grey */
-      border-top: 1px solid #333; /* Separator line */
+      font-size: 0.97em;
+      color: #b4c8d0;
+      border-top: 1px solid #333c66;
+      position: relative;
+      z-index: 1;
+    }
+    .logo-footer {
+      width: 60px;
+      height: auto;
+      margin-bottom: 0.6rem;
+      margin-top: 1rem;
+      opacity: 0.90;
+      filter: drop-shadow(0 2px 6px #23faff22);
+    }
+    /* Responsive */
+    @media (max-width: 650px) {
+      .container { padding: 0 2vw;}
+      .logo-header, .logo-animated { width: 65px;}
+      .logo-footer { width: 34px;}
+      .welcome-text { font-size: 1em;}
+      #academy-info h2 { font-size: 1.2em;}
     }
   </style>
 </head>
 <body>
-  <div class="container"> {/* Wrapper for content */}
+  <div class="container">
     <header>
-      <!-- You could add a logo here if you have one -->
-      <!-- <img src="logo.png" alt="HYPERREACH Academy Logo" style="max-width: 150px; margin-bottom: 15px;"> -->
-      <h1>HYPERREACH ACADEMY</h1>
+      <!-- Sparkle effect in header -->
+      <span class="sparkle" style="top:24px; left:47%; animation-delay:0s;"></span>
+      <span class="sparkle" style="top:85px; left:20%; animation-delay:1.2s;"></span>
+      <span class="sparkle" style="top:52px; right:13%; animation-delay:1.8s;"></span>
+      <img src="images/hyperreach-logo.png" alt="HYPERREACH Logo" class="logo-header" />
+      <h1 class="glow">HYPERREACH ACADEMY</h1>
       <p class="subtitle">Learn AI. Build Bots. Make Money. All From Your Phone.</p>
     </header>
-
+    <!-- Welcome/Animated Section -->
+    <section class="welcome-section">
+      <div class="welcome-logo-container">
+        <img src="images/hyperreach-logo.png" alt="HyperREACH Logo" class="logo-animated" />
+        <h2 class="welcome-text glow">Empowering Academic Excellence<br>Unlock Your Digital Superpowers</h2>
+      </div>
+      <!-- Magic sparkles -->
+      <span class="sparkle" style="top:24px; left:10%; animation-delay:0.5s;"></span>
+      <span class="sparkle" style="top:60px; left:80%; animation-delay:2s;"></span>
+    </section>
+    <!-- What You'll Learn -->
     <section id="academy-info">
-      <h2>What You’ll Learn (Price: ₦1,000)</h2>
-      <ul>
-        <li>How to build AI Assistants like STRIKER</li>
+      <h2 class="glow">What You’ll Learn <span style="font-size:60%; color:#00fff6;">(Price: ₦1,000)</span></h2>
+      <ul class="features-list">
+        <li>How to build AI assistance for yourself and public with zero cost</li>
         <li>Create Telegram Bots with zero code</li>
         <li>Design professional logos & flyers using free AI tools</li>
-        <li>Compose music with SUNO AI (free version)</li>
-        <li>Split music stems with Fadr for creative remixes</li>
+        <li>Compose music with AIs and get money</li>
         <li>Step-by-step guide to monetizing your new skills and knowledge</li>
       </ul>
     </section>
-
+    <!-- How to Join -->
     <section id="how-to-join">
       <h2>How to Join the Academy</h2>
-      <p>To enroll, please make a payment of <strong>₦1,000</strong> to the following account:</p>
-      <div class="payment-info">
-        <p>Bank: <strong>Emmanuel Bulus</strong><br>
-           Account Number: <strong>8067996938</strong></p>
-      </div>
-      <p>After payment, please send a screenshot of your payment confirmation to me on WhatsApp for verification and access:</p>
-      <a href="https://wa.me/2348067996938" target="_blank" class="cta-button">Chat on WhatsApp</a>
+      <p>
+        Ready to unlock your digital future?<br>
+        <strong>It’s simple:</strong> Pay <span style="color:#00ffe5;">₦1,000</span> and get instant access to all premium content, surprises, and community!
+      </p>
+      <p style="margin-bottom:10px;">
+        <strong>Send your payment directly and join instantly:</strong>
+      </p>
+      <a href="https://wa.me/2348067996938" target="_blank" class="cta-button glow">
+        Send Payment & Join on WhatsApp
+      </a>
+      <p style="font-size:0.99em;color:#95f9ee;margin-top:9px;">
+        All transactions are handled securely via WhatsApp. You’ll receive your access and exclusive info once payment is confirmed.
+      </p>
     </section>
-
+    <!-- Affiliate/Teaser Section -->
     <section class="syllaby-section" id="syllaby-affiliate">
-      <h2>Want to Earn Dollars Monthly? Join Syllaby!</h2>
-      <p>Unlock passive income potential by becoming an affiliate for <strong>Syllaby</strong>. Syllaby is an AI-powered content creation platform that helps you generate engaging content effortlessly. Start earning commissions from your phone!</p>
-      <p><a href="https://syllaby.io/?via=emmanuel55" target="_blank" class="cta-button">Sign Up for Syllaby (Earn Passive Income)</a></p>
+      <h2 class="glow">Unlock Affiliate & Global Earning Opportunities!</h2>
+      <p>
+        <strong>Want to earn real money in dollars?</strong> HYPERREACH Academy gives you access not just to today’s top AI and digital skills, but also to <span style="color:#00ffe5;">exclusive affiliate programs</span> and global earning secrets.
+      </p>
+      <p>
+        <span style="color:#fff976; font-weight:bold; text-shadow: 0 0 10px #fffbe0bb;">Only members get the full details and links!</span>
+      </p>
+      <p>
+        Inside, you’ll discover:<br>
+        <span style="color:#00ffcc;">• Step-by-step guides to earning dollars online<br>
+        • Secret platforms for passive income<br>
+        • Community support, tips, and more!</span>
+      </p>
+      <p style="font-size:1.01em;color:#ffeedd;">
+        <strong>Be among the first to access these magical opportunities. Don’t just learn—start earning globally!</strong>
+      </p>
     </section>
-
-    <footer> {/* Changed from div to footer */}
-      <p>Built with love by Emmanuel Bulus (STRIKER ENGINE) | © <script>document.write(new Date().getFullYear())</script> All rights reserved</p>
+    <footer>
+      <img src="images/hyperreach-logo.png" alt="HYPERREACH Logo" class="logo-footer" />
+      <p>
+        Built with love by Emmanuel Bulus (STRIKER ENGINE) | 
+        © <script>document.write(new Date().getFullYear())</script> All rights reserved
+      </p>
     </footer>
   </div>
 </body>

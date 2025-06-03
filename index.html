@@ -41,14 +41,50 @@
       margin-bottom: 18px;
       text-shadow: 0 0 2px #0ff;
     }
+    .section {
+      background: rgba(20,40,60,0.93);
+      border-radius: 18px;
+      box-shadow: 0 4px 32px #00ffd022, 0 1px 1px #0008;
+      padding: 28px 18px 24px 18px;
+      margin: 20px 0 24px 0;
+      text-align: left;
+      max-width: 395px;
+      width: 94%;
+    }
+    .section h2, .section h3 {
+      color: #00ffd0;
+      margin-bottom: 10px;
+      font-size: 1.22rem;
+      letter-spacing: 0.5px;
+    }
+    .section h2 {
+      font-size: 1.36rem;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+      color: #e0ffff;
+      font-size: 1.06rem;
+      line-height: 1.7;
+    }
+    .section ul li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 18px;
+    }
+    .section ul li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+    }
     .cta-section {
-      background: rgba(10,40,60,0.85);
+      background: rgba(10,40,60,0.88);
       border-radius: 20px;
       box-shadow: 0 4px 32px #00ffd042, 0 1px 1px #0008;
       padding: 32px 22px 28px 22px;
       margin: 20px 0 30px 0;
       text-align: center;
-      max-width: 370px;
+      max-width: 390px;
       width: 98%;
     }
     .cta-section h2 {
@@ -74,36 +110,28 @@
       cursor: pointer;
       box-shadow: 0 2px 24px #00ffd022;
       transition: background 0.2s, box-shadow 0.2s;
+      margin-bottom: 12px;
     }
     .cta-btn:hover {
       background: linear-gradient(90deg, #0af, #00ffd0);
       box-shadow: 0 4px 32px #00ffd066;
       color: #000;
     }
-    .info-section {
-      background: rgba(30,90,120,0.38);
-      border-radius: 16px;
-      padding: 20px 16px 16px 16px;
-      margin-bottom: 32px;
-      max-width: 385px;
-      width: 96%;
+    .divider {
+      border: none;
+      border-top: 1.5px solid #00ffd055;
+      margin: 26px 0 20px 0;
+    }
+    .bible {
+      font-size: 1.04rem;
+      color: #aaeedd;
       text-align: center;
-    }
-    .info-section h3 {
-      color: #00ffd0;
-      margin-bottom: 10px;
-      font-size: 1.18rem;
-    }
-    .info-section ul {
-      list-style: none;
-      padding: 0;
-      color: #e0ffff;
-      font-size: 1.05rem;
-      line-height: 1.6;
+      margin: 26px 0 12px 0;
+      font-style: italic;
     }
     @media (max-width: 500px) {
       .logo-header h1 { font-size: 2.1rem; }
-      .cta-section, .info-section { padding: 18px 4px; }
+      .section, .cta-section { padding: 16px 4px; }
     }
   </style>
 </head>
@@ -113,29 +141,67 @@
     <div class="subtitle">Learn AI. Build Bots. Make Money. All From Your Phone.</div>
   </div>
 
-  <div class="cta-section">
-    <h2>Ready to Join the Next Digital Elite?</h2>
-    <p>
-      Sign up below and start unlocking your digital superpowers.<br>
-      <b>Fill the form to reserve your spot!</b>
-    </p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfY2B3bFv6d4GiWlt3h9v-B0XL9j6qkLwB0kbsP8gkP2vSPnQ/viewform" target="_blank">
-      <button class="cta-btn">Join Hyperreach Class</button>
-    </a>
+  <div class="section" style="background:rgba(0,255,208,0.11);text-align:center;margin-bottom:15px;">
+    <b>Empowering Academic Excellence • Unlock Your Digital Superpowers</b>
   </div>
-
-  <div class="info-section">
-    <h3>What You’ll Learn</h3>
+  
+  <div class="section">
+    <h2>What You’ll Learn <span style="font-size:0.98em;color:#fff;">(Price: ₦1,000)</span></h2>
     <ul>
-      <li>🤖 How to build and use AI bots (with your phone!)</li>
-      <li>🌟 Secrets to making money online with digital skills</li>
-      <li>🚀 Access to exclusive resources and mentorship</li>
-      <li>💸 All for just <b>₦1,000</b> (affordable for everyone!)</li>
+      <li>How to build AI assistance for yourself and public with zero cost</li>
+      <li>Create Telegram Bots with zero code</li>
+      <li>Design professional logos & flyers using free AI tools</li>
+      <li>Compose music with AI and get money</li>
+      <li>Step-by-step guide to monetizing your new skills and knowledge</li>
     </ul>
   </div>
 
-  <div style="margin-bottom:40px; font-size:0.97rem; color:#aad6ffbb;">
-    Empowering Academic Excellence • Unlock Your Digital Superpowers
+  <div class="section" style="border:2px solid #00ffd0;">
+    <h2>Unlock Affiliate & Global Earning Opportunities!</h2>
+    <p style="font-size:1.07em;color:#fff;"><b>Want to earn real money in dollars?</b> HYPERREACH Academy gives you access not just to today’s top AI and digital skills, but also to <span style="color:#00ffd0;">exclusive affiliate programs</span> and global earning secrets.<br>
+    <span style="color:#ffe866;font-weight:600;">Only members get the full details and links!</span></p>
+    <ul style="margin-top:12px;">
+      <li>Step-by-step guides to earning dollars online</li>
+      <li>Secret platforms for passive income</li>
+      <li>Community support, tips, and more!</li>
+    </ul>
+    <p style="margin-top:15px;">Be among the first to access these magical opportunities. Don’t just learn—start earning globally!</p>
+  </div>
+
+  <div class="cta-section">
+    <h2>How to Join the Academy</h2>
+    <p>
+      Ready to unlock your digital future?<br>
+      <b>It’s simple:</b> Pay <span style="color:#00ffd0;">₦1,000</span> and get instant access to all premium content, surprises, and community!
+    </p>
+    <p>
+      <b>Send your payment directly and join instantly:</b>
+    </p>
+    <a href="https://wa.me/2348067996938?text=Hi%2C%20I%20want%20to%20join%20Hyperreach%20Academy%21%20My%20name%20is%20_____" target="_blank">
+      <button class="cta-btn">Send Payment & Join on WhatsApp</button>
+    </a>
+    <div style="font-size:0.98em;color:#b6f0ff;margin-top:10px;">
+      All transactions are handled securely via WhatsApp. You’ll receive your access and exclusive info once payment is confirmed.
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Why Hyperreach?</h3>
+    <ul>
+      <li>Practical skills you can use right away on your phone</li>
+      <li>Earn while you learn—affiliate and digital opportunities</li>
+      <li>Mentorship, community, and ongoing support</li>
+      <li>Affordable and open to all</li>
+    </ul>
+  </div>
+
+  <hr class="divider"/>
+  <div class="bible">
+    “I can do all things through Christ who strengthens me.”<br>
+    <span style="font-size:0.96em;color:#00ffd0;">— Philippians 4:13</span>
+  </div>
+  <div style="margin-bottom:38px; font-size:0.97rem; color:#aad6ffbb; text-align:center;">
+    &copy; 2025 Hyperreach Academy. All rights reserved.
   </div>
 </body>
 </html>
